@@ -28,4 +28,4 @@ Here is a class:
 public class FallQuaterClasses{
 }
 ```
-[Lab Report 1](https://33sihan.github.io/<your-lab-reports-repo>/lab-report-1-week-0.html)
+[Lab Report 1](lab-report-1-week-0.html)
