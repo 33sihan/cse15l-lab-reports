@@ -4,7 +4,7 @@
 
 [Marshall College webpage](https://marshall.ucsd.edu/)
 
-![Thurgood Marshall College](https://images.app.goo.gl/TApEKVRfZ9z66uBn6)
+![Image](https://images.app.goo.gl/TApEKVRfZ9z66uBn6)
 
 > CSE classes I take this quater:
 * cse15L
