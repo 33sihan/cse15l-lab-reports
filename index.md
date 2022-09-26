@@ -6,6 +6,7 @@
 > CSE classes I take this quater:
 * cse15L
 * cse12
+
 > Math classes I take this quater:
 1. math103A
 2. math184
