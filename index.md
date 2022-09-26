@@ -28,4 +28,4 @@ Here is a class:
 public class FallQuaterClasses{
 }
 ```
-[labreport0]([Lab Report 1](lab-report-1-week-0.html))
+[labreport0](lab-report-1-week-0.html)
