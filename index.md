@@ -2,9 +2,9 @@
 ## This is Sihan Wang.
 **College**: *Marshall*
 
-[Marshall College webpage](https://marshall.ucsd.edu/)
+[Marshall College web page](https://marshall.ucsd.edu/)
 
-![Image](https://images.app.goo.gl/TApEKVRfZ9z66uBn6)
+![Marshall Web page](marshall.png)
 
 > CSE classes I take this quater:
 * cse15L
