@@ -43,7 +43,6 @@ class WhereAmI {
     System.out.println(System.getProperty("user.dir"));
   }
 }
-
 ```
 
 
@@ -52,7 +51,6 @@ class WhereAmI {
 ```
 javac WhereAmI.java
 java WhereAmI
-
 ```
 
 * Run this command:`scp WhereAmI.java siw031@ieng6.ucsd.edu:~/`
@@ -76,13 +74,14 @@ Then you can see something like this:
 ## Step 6: Optimizing Remote Running
 * We can use "" to write a command at the end of `ssh` command to directly run it, for example:
 
-`ssh siw031@ieng6.ucsd.edu "ls"`
+```
+ssh siw031@ieng6.ucsd.edu "ls"
+```
 
 * We can apply semicolons to run multiple commands, for example:
 
 ```
 cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI
-
 ```
 * We can use up-arrow to recall commands
 
