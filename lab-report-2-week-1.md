@@ -3,6 +3,7 @@
 ## Step 1: Installing VScode
 * Go to the Visual Studio Code website: [Link](https://code.visualstudio.com/)
 * following the instruction
+
 * open a window look like this:
 
 ![](InstallingVScode.png)
@@ -12,6 +13,7 @@
 ## Step 2: Remotely Connecting
 * open a terminal in VSCode and type the following command:
 `ssh siw031@ieng6.ucsd.edu` and enter the password
+
 * then can see the following messages:
 
 ![](RemoteConnect.png)
@@ -21,6 +23,7 @@ That means you're successfully logged in to the remote server!
 
 ## Step 3: Trying Some Commands
 * Try `cd`, `ls -a`, `cd ~`, `ls -lat`, `ls <directory>`, `cp /home/linux/ieng6/cs15lfa22/public/hello.txt ~/`, `cat /home/linux/ieng6/cs15lfa22/public/hello.txt`and etc.
+
 * After that, you can see like this:
 
 ![](TrySomeCommands.png)
@@ -50,6 +53,7 @@ java WhereAmI
 ```
 * Run this command:`scp WhereAmI.java siw031@ieng6.ucsd.edu:~/`
 * Log with ssh and run `javac WhereAmI.java` and `java WhereAmI` on the remote server
+
 Then you can see something like this:
 
 ![](MoveFileswithScp.png)
@@ -60,6 +64,7 @@ Then you can see something like this:
 * On client, run this command:`ssh-keygen` and following the commands on the following screenshot:
 
 ![](SSHkeys.png)
+
 * Then you can log into the remote server without entering password.
 
 ---
@@ -78,6 +83,7 @@ cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI
 
 ```
 * We can use up-arrow to recall commands
+
 Smiliar to the following image:
 
 ![](OptimizingRemoteRunning.png)
