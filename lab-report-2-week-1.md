@@ -80,4 +80,4 @@ cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI
 * We can use up-arrow to recall commands
 Smiliar to the following image:
 
-![](Optimizing Remote Running.png)
+![](OptimizingRemoteRunning.png)
