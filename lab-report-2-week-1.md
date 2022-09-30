@@ -33,6 +33,7 @@ That means you're successfully logged in to the remote server!
 
 ## Step 4: Moving Files with scp
 * Create a java file named `WhereAmI.java` and copy and paste the following code:
+
 ```
 class WhereAmI {
   public static void main(String[] args) {
@@ -44,6 +45,8 @@ class WhereAmI {
 }
 
 ```
+
+
 * Run the commands below:
 
 ```
@@ -51,6 +54,7 @@ javac WhereAmI.java
 java WhereAmI
 
 ```
+
 * Run this command:`scp WhereAmI.java siw031@ieng6.ucsd.edu:~/`
 * Log with ssh and run `javac WhereAmI.java` and `java WhereAmI` on the remote server
 
