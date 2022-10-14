@@ -57,7 +57,7 @@ class SearchEngine {
 }
 ```
 Here are three screenshots:
-** 1. Add a string "pineapple"
+## 1. Add a string "pineapple"
 - Here are some **methods are called**: `.handleRequest(url)`, `.getPath()`, `.contains(str)`, `.getQuery()`, `.split(str)`, and `.equal(str)`. The following are the explanations.
 - First, I call handleRequest method in class Handler and take an argument url.
 - Using .getPath() method to check whether the path contains only "/" or "/search" or "/add". In this case, the path, "/add?s=pineapple", only contains "/add".
@@ -68,7 +68,7 @@ Here are three screenshots:
 This is the screenshot.
 ![](AddPineapple.png)
 
-** 2. Search a string "app"
+## 2. Search a string "app"
 - Here are some **methods are called**: `.handleRequest(url)`, `.getPath()`, `.contains(str)`, `.getQuery()`, `.split(str)`, and `.equal(str)`. The following are the explanations.
 - First, I call handleRequest method in class Handler and take an argument url.
 - Using .getPath() method to check whether the path contains only "/" or "/search" or "/add". In this case, the path, "/search?s=app", only contains "/search".
@@ -81,7 +81,7 @@ This is the screenshot.
 This is the screenshot.
 ![](SearchApp.png)
 
-** 3. After adding strings, go back to root path
+## 3. After adding strings, go back to root path
 - Here are some **methods are called**: `.handleRequest(url)`, `.getPath()`, and `.equal(str)`. The following are the explanations.
 - First, I call handleRequest method in class Handler and take an argument url.
 - Using .getPath() method to check whether the path contains only "/" or "/search" or "/add". In this case, the path, "/", equals to "/".
@@ -90,7 +90,7 @@ This is the screenshot.
 This is the screenshot.
 ![]()
 # Part 2
-** 1. First bug appears on reversed method in ArrayExamples.java
+## 1. First bug appears on reversed method in ArrayExamples.java
 - The failure-inducing input (the code of the test):
 
 ```
@@ -130,7 +130,7 @@ static int[] reversed(int[] arr) {
 First, it creates a  new empty array. Then, it loops from the first integer to the last integer in input **arr**. The bug is the method assigns the values in newArray to arr.
 However, the newArray is empty, so after looping, all of elements in arr will be 0. That's why the symptom said "arrays first differed at element [0]; expected:<200> but was:<0>."
 
-** 2. The second bug appears on filter method in ListExamples.java
+## 2. The second bug appears on filter method in ListExamples.java
 - The failure-inducing input (the code of the test):
 
 ```
