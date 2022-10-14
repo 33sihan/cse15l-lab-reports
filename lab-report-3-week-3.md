@@ -57,7 +57,7 @@ class SearchEngine {
 }
 ```
 Here are three screenshots:
-1. Add a string "pineapple"
+** 1. Add a string "pineapple"
 - Here are some **methods are called**: `.handleRequest(url)`, `.getPath()`, `.contains(str)`, `.getQuery()`, `.split(str)`, and `.equal(str)`. The following are the explanations.
 - First, I call handleRequest method in class Handler and take an argument url.
 - Using .getPath() method to check whether the path contains only "/" or "/search" or "/add". In this case, the path, "/add?s=pineapple", only contains "/add".
@@ -65,9 +65,10 @@ Here are three screenshots:
 - When the parameters[0] is "s", I add the field **str** by parameters[1], which is "pineapple". And start a new line.
 - Finally, return "String is added by " + parameters[1] + "!" + "It's now " + **str**.
 
+This is the screenshot.
 ![](AddPineapple.png)
 
-2. Search a string "app"
+** 2. Search a string "app"
 - Here are some **methods are called**: `.handleRequest(url)`, `.getPath()`, `.contains(str)`, `.getQuery()`, `.split(str)`, and `.equal(str)`. The following are the explanations.
 - First, I call handleRequest method in class Handler and take an argument url.
 - Using .getPath() method to check whether the path contains only "/" or "/search" or "/add". In this case, the path, "/search?s=app", only contains "/search".
@@ -77,16 +78,19 @@ Here are three screenshots:
 - After that, I use a for loop to check each element of separateStr. I add it to **searchResult** if it contains "app".
 - Finally, return **searchResult**.
 
+This is the screenshot.
 ![](SearchApp.png)
 
-3. After adding strings, go back to root path
+** 3. After adding strings, go back to root path
 - Here are some **methods are called**: `.handleRequest(url)`, `.getPath()`, and `.equal(str)`. The following are the explanations.
 - First, I call handleRequest method in class Handler and take an argument url.
 - Using .getPath() method to check whether the path contains only "/" or "/search" or "/add". In this case, the path, "/", equals to "/".
 - Just return the field str in type String.
 
+This is the screenshot.
+![]()
 # Part 2
-1. First bug appears on reversed method in ArrayExamples.java
+** 1. First bug appears on reversed method in ArrayExamples.java
 - The failure-inducing input (the code of the test):
 
 ```
@@ -126,7 +130,7 @@ static int[] reversed(int[] arr) {
 First, it creates a  new empty array. Then, it loops from the first integer to the last integer in input **arr**. The bug is the method assigns the values in newArray to arr.
 However, the newArray is empty, so after looping, all of elements in arr will be 0. That's why the symptom said "arrays first differed at element [0]; expected:<200> but was:<0>."
 
-2. The second bug appears on filter method in ListExamples.java
+** 2. The second bug appears on filter method in ListExamples.java
 - The failure-inducing input (the code of the test):
 
 ```
@@ -171,3 +175,4 @@ static List<String> filter(List<String> list, StringChecker sc) {
   }
 ```
 - The explanation of the connection between the symptom and the bug:
+First, the method creates a new array String list called **result**. Then it loops from the first element to the last element in the input **list**. If the element fulfills the requirement of the method **checkString**, which is whether contains "cse", it will be added to **result** at index 0. Here is the bug because we want elements in the same order they appeared in the input list. However, the later elements that contain "cse" will come earlier. Thus, we should change `result.add(0, s)` to `result.add(s)`.
