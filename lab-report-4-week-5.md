@@ -9,12 +9,17 @@ Here are three *command-line* options.
 
 `grep -h` can dispay the matched lines, but do not display the filenames.
 
+Why it is useful:
+It is convenient for us to just check the contents of a file without showing the filenames. In this case, if we want to extract sentences with a term, we can use grep -h, which can save a lot of time for us.
+
+
 **1. Example 1**
 
 **Command:** 
 ```
 grep -h "biomedical" technical/biomed/*.txt 
 ```
+
 **Output:**
 ```
 The availability of biomedical literature in electronic
@@ -34,6 +39,7 @@ The availability of biomedical literature in electronic
         biomedical research community. GoMiner is flexible both
         gene annotations or concepts from the biomedical
 ```
+
 **2. Example 2**
 
 **Command:** 
@@ -68,6 +74,9 @@ UNITED STATES COURT OF APPEALS
 
 ##  grep -l
 `grep -l` can dispay list of filenames only.
+
+Why it is useful:
+It is useful since we can find the exact file from the filenames to get the contexts of these files, which allow us to further discover the details ralated to the term we are looking for.
 
 **1. Example 1**
 
@@ -109,6 +118,7 @@ technical/plos/pmed.0020039.txt
 ```
 grep -l "UNITED STATES" technical/government/About_LSC/*.txt
 ```
+
 **Output:**
 ```
 technical/government/About_LSC/LegalServCorp_v_VelazquezDissent.txt
@@ -118,6 +128,9 @@ technical/government/About_LSC/ODonnell_et_al_v_LSCdecision.txt
 ```
 ##  grep -n
 `grep -l` can dispay matched lines and their line numbers.
+
+Why it is useful:
+It is useful when we want to look the relevant contents about the sentence containing that term. We can utilize line numbers to directly find the sentence, which saves a lot of time for us to accurately locate the sentences. For example, we can easily find and read the paragraphs that contain the sentences.
 
 **1. Example 1**
 
