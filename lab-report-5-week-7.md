@@ -4,90 +4,90 @@ I pick changing the name of the start parameter and its uses to base.
 ---
 The sequence of keys: `/start<Enter>dwibase<Erc>ndwibase<Erc>ndwibase<Erc>n:wq<Enter>`
 
-1. type `/start<Enter>`
+Step 1: type `/start<Enter>`
 
 Description: to search the word *start* in this file and the cursor jumping to the first *start* word
 
 ![](searchStart.png)
 
 
-2. type `dw` 
+Step 2: type `dw` 
 
 Description: to delete the word where the cursor is at.
 
 ![](dw.png)
 
 
-3. type `i`
+Step 3: type `i`
 
 Description: to enter the insert mode 
 
-![](inserMode.png)
+![](insertMode.png)
 
 
-4. type `base<Erc>`
+Step 4: type `base<Erc>`
 
 Description: insert the word *base* and use <Erc> to go back to the normal mode
   
 ![](baseNormalMode.png)
 
 
-5. type `n`
+Step 5: type `n`
 
 Description: search forwards for the next occurrence of word *start* and move the cursor to the beginning of the word
   
 ![](nextStartWord.png)
 
-6. type `dw` 
+Step 6: type `dw` 
   
 Description: to delete the word where the cursor is at.
   
 ![](dw2.png)
 
-7. type `i`
+Step 7: type `i`
   
 Description: to enter the insert mode 
   
 ![](inserMode2.png)
 
-8. type `base<Erc>`
+Step 8: type `base<Erc>`
   
 Description: insert the word *base* and use <Erc> to go back to the normal mode
   
 ![](baseNormalMode2.png)
 
-9. type `n`
+Step 9: type `n`
   
 Description: search forwards for the next occurrence of word *start* and move the cursor to the beginning of the word
   
 ![](nextStartWord2.png)
 
-10. type `dw` 
+Step 10: type `dw` 
   
 Description: to delete the word where the cursor is at.
   
 ![](dw3.png)
 
-11. type `i`
+Step 11: type `i`
   
 Description: to enter the insert mode 
   
 ![](inserMode3.png)
 
-12. type `base<Erc>`
+Step 12: type `base<Erc>`
   
 Description: insert the word *base* and use <Erc> to go back to the normal mode
   
 ![](baseNormalMode3.png)
 
-13. type `n`
+Step 13: type `n`
   
 Description: search forwards for the next occurrence of word *start* and move the cursor to the beginning of the word,  
 and then we can find the next word named "start" is not the parameter that we want to change and it is the last word named "start"
   
 ![](nextStartWord3.png)
 
-14. type `:wq<Enter>`
+Step 14: type `:wq<Enter>`
   
 Description: to exit vim and save changes we just made
   
