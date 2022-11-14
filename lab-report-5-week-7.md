@@ -7,82 +7,86 @@ I pick changing the name of the start parameter and its uses to base.
 
 Description: to search the word *start* in this file and the cursor jumping to the first *start* word
 
-[](searchStart.png)
+![](searchStart.png)
 
 2. type `dw` 
 
 Description: to delete the word where the cursor is at.
 
-[](dw.png)
+![](dw.png)
 
 3. type `i`
 
 Description: to enter the insert mode 
 
-[](inserMode.png)
+![](inserMode.png)
 
 4. type `base<Erc>`
 
 Description: insert the word *base* and use <Erc> to go back to the normal mode
   
-[](baseNormalMode.png)
+![](baseNormalMode.png)
 
 5. type `n`
 
 Description: search forwards for the next occurrence of word *start* and move the cursor to the beginning of the word
   
-[](nextStartWord.png)
+![](nextStartWord.png)
 
 6. type `dw` 
+  
 Description: to delete the word where the cursor is at.
-[](dw2.png)
+  
+![](dw2.png)
 
 7. type `i`
+  
 Description: to enter the insert mode 
-[](inserMode2.png)
+  
+![](inserMode2.png)
 
 8. type `base<Erc>`
   
 Description: insert the word *base* and use <Erc> to go back to the normal mode
   
-[](baseNormalMode2.png)
+![](baseNormalMode2.png)
 
 9. type `n`
   
 Description: search forwards for the next occurrence of word *start* and move the cursor to the beginning of the word
   
-[](nextStartWord2.png)
+![](nextStartWord2.png)
 
 10. type `dw` 
   
 Description: to delete the word where the cursor is at.
   
-[](dw3.png)
+![](dw3.png)
 
 11. type `i`
   
 Description: to enter the insert mode 
   
-[](inserMode3.png)
+![](inserMode3.png)
 
 12. type `base<Erc>`
   
 Description: insert the word *base* and use <Erc> to go back to the normal mode
   
-[](baseNormalMode3.png)
+![](baseNormalMode3.png)
 
 13. type `n`
   
 Description: search forwards for the next occurrence of word *start* and move the cursor to the beginning of the word,  
 and then we can find the next word named "start" is not the parameter that we want to change and it is the last word named "start"
   
-[](nextStartWord3.png)
+![](nextStartWord3.png)
 
 14. type `:wq<Enter>`
   
 Description: to exit vim and save changes we just made
   
-[](wqSave.png)
+![](wqSave.png)
 
 # Part two
 In this part, I test the time of editing and running the file HelloWorld.java in two different ways.
