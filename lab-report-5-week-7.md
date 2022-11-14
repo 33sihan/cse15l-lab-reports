@@ -2,7 +2,8 @@
 I pick changing the name of the start parameter and its uses to base.
 
 ---
-## The sequence of keys: `/start<Enter>dwibase<Erc>ndwibase<Erc>n:wq<Enter>`
+The sequence of keys: `/start<Enter>dwibase<Erc>ndwibase<Erc>ndwibase<Erc>n:wq<Enter>`
+
 1. type `/start<Enter>`
 
 Description: to search the word *start* in this file and the cursor jumping to the first *start* word
