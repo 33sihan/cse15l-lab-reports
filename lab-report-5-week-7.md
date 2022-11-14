@@ -10,11 +10,13 @@ Description: to search the word *start* in this file and the cursor jumping to t
 
 ![](searchStart.png)
 
+
 2. type `dw` 
 
 Description: to delete the word where the cursor is at.
 
 ![](dw.png)
+
 
 3. type `i`
 
@@ -22,11 +24,13 @@ Description: to enter the insert mode
 
 ![](inserMode.png)
 
+
 4. type `base<Erc>`
 
 Description: insert the word *base* and use <Erc> to go back to the normal mode
   
 ![](baseNormalMode.png)
+
 
 5. type `n`
 
