@@ -53,4 +53,25 @@ fi
 <img width="942" alt="Screen Shot 2022-11-27 at 17 19 23" src="https://user-images.githubusercontent.com/114370407/204172364-82ac61cd-c878-49c9-bba4-0da23dd7d478.png">
 
 ## 3. Trace the script of the file with compile error
+`rm -rf student-submission`:
+| Commands                          | Standard Output                           | Return Code |
+| --------------------------------- |:-----------------------------------------:| -----------:|
+| `rm -rf student-submission`       | none                                      |0            |
+| `git clone $1 student-submission` | Cloning into 'student-submission'...      |0            |
+| `cd student-submission`           | none                                      |0            |
+| `if [[ -f ListExamples.java ]]`   | none                                      |0            |
+| `echo "found files!"`             | found files!                              |0            |
+| `echo "haven't found files"`      | not run                                       |
+| `cp ListExamples.java ../`        | none                                      |0            |
+| `cd ..`                           | none                                      |0            |
+| `set +e`                          | none                                      |0            |
+| `javac ListExamples.java 2> errors.txt`| none                                 |non-zero     |
+| `if [[ $? -eq 0 ]]`               | none                                      |0            |       
+| `echo "compile successfully"`     |not run   |
+| `cat errors.txt`               |ListExamples.java:15: error: ';' expected result.add(0, s)                        ^1 error    |0     |
+| `echo "compile error!"`| compile error!      |0                                   |
+| `exit 1`                          |none                                       |1            |
 
+In the command `if [[ -f ListExamples.java ]]`, the truth value will be true since we can find a file with the name "ListExamples.java".
+In the commadn `if [[ $? -eq 0 ]]`, the truth value will be false, since `javac ListExamples.java 2> errors.txt`'s return code is nonzero, which means this file has a compile error.
+And the following commands did not run since we detected the compile error and exit.
