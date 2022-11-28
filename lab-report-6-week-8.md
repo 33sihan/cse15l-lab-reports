@@ -46,11 +46,11 @@ fi
 ```
 ## 2. Screenshots of three different student submissions and their reported grade
 * For the correct file:
-* <img width="838" alt="Screen Shot 2022-11-27 at 17 16 49" src="https://user-images.githubusercontent.com/114370407/204172188-ad3d463a-17e2-4f11-97c5-23310f1b7bf0.png">
-* For the file with compile error: 
-<img width="868" alt="Screen Shot 2022-11-27 at 17 18 44" src="https://user-images.githubusercontent.com/114370407/204172233-26c0e5fe-f355-4988-a9e7-e43b023e3b71.png">
-* For the file with `filter` in the wrong order:
-<img width="942" alt="Screen Shot 2022-11-27 at 17 19 23" src="https://user-images.githubusercontent.com/114370407/204172364-82ac61cd-c878-49c9-bba4-0da23dd7d478.png">
+<img width="838" alt="Screen Shot 2022-11-27 at 17 16 49" src="https://user-images.githubusercontent.com/114370407/204172188-ad3d463a-17e2-4f11-97c5-23310f1b7bf0.png">
+
+* For the file with compile error: <img width="868" alt="Screen Shot 2022-11-27 at 17 18 44" src="https://user-images.githubusercontent.com/114370407/204172233-26c0e5fe-f355-4988-a9e7-e43b023e3b71.png">
+
+* For the file with `filter` in the wrong order:<img width="942" alt="Screen Shot 2022-11-27 at 17 19 23" src="https://user-images.githubusercontent.com/114370407/204172364-82ac61cd-c878-49c9-bba4-0da23dd7d478.png">
 
 ## 3. Trace the script of the file with compile error
 `rm -rf student-submission`:
@@ -73,5 +73,5 @@ fi
 | `exit 1`                          |none                                       |1            |
 
 In the command `if [[ -f ListExamples.java ]]`, the truth value will be true since we can find a file with the name "ListExamples.java".
-In the commadn `if [[ $? -eq 0 ]]`, the truth value will be false, since `javac ListExamples.java 2> errors.txt`'s return code is nonzero, which means this file has a compile error.
+In the command `if [[ $? -eq 0 ]]`, the truth value will be false, since `javac ListExamples.java 2> errors.txt`'s return code is nonzero, which means this file has a compile error.
 And the following commands did not run since we detected the compile error and exit.
