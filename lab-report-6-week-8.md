@@ -54,23 +54,24 @@ fi
 
 ## 3. Trace the script of the file with compile error
 `rm -rf student-submission`:
-| Commands                          | Standard Output                           | Return Code |
-| --------------------------------- |:-----------------------------------------:| -----------:|
-| `rm -rf student-submission`       | none                                      |0            |
-| `git clone $1 student-submission` | Cloning into 'student-submission'...      |0            |
-| `cd student-submission`           | none                                      |0            |
-| `if [[ -f ListExamples.java ]]`   | none                                      |0            |
-| `echo "found files!"`             | found files!                              |0            |
-| `echo "haven't found files"`      | not run                                       |
-| `cp ListExamples.java ../`        | none                                      |0            |
-| `cd ..`                           | none                                      |0            |
-| `set +e`                          | none                                      |0            |
-| `javac ListExamples.java 2> errors.txt`| none                                 |non-zero     |
-| `if [[ $? -eq 0 ]]`               | none                                      |0            |       
-| `echo "compile successfully"`     |not run   |
-| `cat errors.txt`               |ListExamples.java:15: error: ';' expected result.add(0, s)                        ^1 error    |0     |
-| `echo "compile error!"`| compile error!      |0                                   |
-| `exit 1`                          |none                                       |1            |
+
+| Commands                               | Standard Output                           | Return Code |
+| -------------------------------------- |:-----------------------------------------:| -----------:|
+| `rm -rf student-submission`            | none                                      |0            |
+| `git clone $1 student-submission`      | Cloning into 'student-submission'...      |0            |
+| `cd student-submission`                | none                                      |0            |
+| `if [[ -f ListExamples.java ]]`        | none                                      |0            |
+| `echo "found files!"`                  | found files!                              |0            |
+| `echo "haven't found files"`           | not run because it is in an if branch that doesn’t evaluate| none|
+| `cp ListExamples.java ../`             | none                                      |0            |
+| `cd ..`                                | none                                      |0            |
+| `set +e`                               | none                                      |0            |
+| `javac ListExamples.java 2> errors.txt`| none                                      |non-zero     |
+| `if [[ $? -eq 0 ]]`                    | none                                      |0            |       
+| `echo "compile successfully"`          |not run because it is in an if branch that doesn’t evaluate  |none|
+| `cat errors.txt`                       |ListExamples.java:15: error: ';' expected result.add(0, s)^1 error |0     |
+| `echo "compile error!"`                | compile error!                            |0            |
+| `exit 1`                               |none                                       |1            |
 
 In the command `if [[ -f ListExamples.java ]]`, the truth value will be true since we can find a file with the name "ListExamples.java".
 In the command `if [[ $? -eq 0 ]]`, the truth value will be false, since `javac ListExamples.java 2> errors.txt`'s return code is nonzero, which means this file has a compile error.
